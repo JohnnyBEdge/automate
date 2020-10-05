@@ -1,0 +1,63 @@
+1. What are the two values of the Boolean data type? How do you write them?
+    True, False 
+    With capital letter
+
+2. What are the three Boolean operators?
+    and, or, not
+
+4. What do the following expressions evaluate to?
+(5 > 4) and (3 == 5)
+    True and False
+    = False
+not (5 > 4)
+    not True
+    = False
+(5 > 4) or (3 == 5)
+    True or False
+    = True
+not ((5 > 4) or (3 == 5))
+    not (False or False)
+    not False
+    = True
+(True and True) and (True == False) (not False) or (not True)
+    True and False True or False
+    False True
+    = False?
+5. What are the six comparison operators?
+    > <, >= <=, !=
+6. What is the difference between the equal to operator and the assign- ment operator?
+    equal: ==
+    assign: =
+
+8. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+**BLOCK** print('eggs') 
+if spam > 5: 
+**BLOCK** print('bacon') 
+else:
+**BLOCK** print('ham') print('spam')
+print('spam')
+
+10. What can you press if your program is stuck in an infinite loop?
+    ctrl + C
+
+11. What is the difference between break and continue?
+    - used in loops, continue will jump back to beginning, break will exit
+
+12. What is the difference between range(10), range(0, 10), and range(0, 10, 1) in a for loop?
+    range repeats the for loop 10 times
+    range(0,10) repeats the loop, starts at 0 and ends when iterator = 10
+    range(0,10,1) same as above, moving in increments of 1
+
+Extra credit: Look up the round() and abs() functions on the Internet, and find out what they do
+
+    round() rounds takes 2 arguments, number to round and decimal places to round to
+    x=round(5.76543) // 6
+    x=round(5.76543,1) // 5.8
+    x=round(5.76543,2) // 5.77
+    x=round(5.76543,5) // 5.76543
+
+    abs() returns the absolute value of a number
+    x = abs(-7.25) //7.25
+    
