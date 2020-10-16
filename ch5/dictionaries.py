@@ -62,4 +62,35 @@
 # import pprint
 # pprint.pprint(count)
 
+#Nested Dict and Lists
+allGuests = {
+    'Alice': {
+        'apples': 5, 
+        'pretzels': 12
+        },
+    'Bob': {
+        'ham sandwiches': 3,
+        'apples': 2
+        },
+    'Carol': {
+        'cups': 3, 
+        'apple pies': 1
+        }
+}
 
+def totalBrought(guests, item):
+    numBrought=0
+    #for loop interates over the key value pairs in guests
+    for k, v in guests.items():
+        #string of guest names assigned to k, and dictionary of picnic items to v
+        # if the item exists, it is added
+        #if it does not exsis, get sets the item with 0
+        numBrought = numBrought + v.get(item,0)
+    return numBrought
+
+print('Number of things being brought:')
+print(' - Apples         ' + str(totalBrought(allGuests, 'apples')))
+print(' - Cups           ' + str(totalBrought(allGuests, 'cups')))
+print(' - Cakes          ' + str(totalBrought(allGuests, 'cakes')))
+print(' - Ham Sandwiches ' + str(totalBrought(allGuests, 'ham sandwiches')))
+print(' - Apple Pies     ' + str(totalBrought(allGuests, 'apple pies')))
